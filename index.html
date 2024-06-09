@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles.css">
+
+   <title>Clima e Musica
+   </title>
+</head>
+<body>
+   <section class="container">
+      <video class="video" autoplay muted loop>
+         <source id="video-source" src="./video/video1.mp4" type="video/mp4">
+      </video>
+
+   <div class="caixa">
+      <div class="procura">
+         <button onclick="botaoDeBusca()">
+            <img src="./assets/lupa.png" alt="icon-lupa">
+         </button>
+         <input id="input-busca" placeholder="Digite o nome da cidade" type="text">
+      </div>
+      <div class="envelope">
+         <div class="conteudo-clima">
+            <img class="iconte-tempo" src="./assets/01d.png" alt="icone-tempo">
+            <h2 class="nome-cidade">Paris</h2>
+            <h3 class="temperatura">22ºC</h3>
+            
+            <div class="conteudo-variacoes">
+            <p class="maxTemperatura">máx: 23ºC</p>
+            <p class="minTemperatura">mín: 21ºC</p>
+            </div>
+         </div>
+         <div class="conteudo-musica">
+            <img src="./assets/Musica.png" alt="Musica-icon">
+            <h2>PlayList</h2>
+            <ul class="playlist-caixa">
+               <li>
+                  <img src="./assets/spotify.png" alt="spotify-icon">
+                  <p>Noveautés pop</p>
+               </li>
+               <li>
+                  <img src="./assets/spotify.png" alt="spotify-icon">
+                  <p>Noveautés pop</p>
+               </li>
+               <li>
+                  <img src="./assets/spotify.png" alt="spotify-icon">
+                  <p>Noveautés pop</p>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</section>
+   <script src="./script.js"></script>
+   
+</body>
+
+</html>
